@@ -19,4 +19,17 @@
   --normal-font-size: 0.938 rem;
   --small-font-size: 0.813 rem;
   --smaller-font-size: 0.75 rem;
+
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  --mb-1: 0.5 rem;
+  --mb-2: 1 rem;
+  --mb-3: 1.5 rem;
+  --mb-4: 2 rem;
+  --mb-5: 2.5 rem;
+  --mb-6: 3 rem;
+
+  --z-tooltip: 10;
+  --z-fixed: 100;
 }
