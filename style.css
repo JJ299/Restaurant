@@ -10,4 +10,13 @@
   --text-color-light: #a6a6a6;
   --body-color: #fbfefd;
   --container-color: #ffffff;
+
+  --body-font: "Poppins", sans-serif;
+  --biggest-font-size: 2.25 rem;
+  --h1-font-size: 1.5 rem;
+  --h2-font-size: 1.25 rem;
+  --h3-font-size: 1 rem;
+  --normal-font-size: 0.938 rem;
+  --small-font-size: 0.813 rem;
+  --smaller-font-size: 0.75 rem;
 }
