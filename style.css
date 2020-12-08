@@ -33,3 +33,15 @@
   --z-tooltip: 10;
   --z-fixed: 100;
 }
+
+@media screen and (min-width: 768px) {
+  :root {
+    --biggest-font-size: 4 rem;
+    --h1-font-size: 2.25 rem;
+    --h2-font-size: 1.5 rem;
+    --h3-font-size: 1.25 rem;
+    --normal-font-size: 1 rem;
+    --small-font-size: 0.875 rem;
+    --smaller-font-size: 0.813 rem;
+  }
+}
