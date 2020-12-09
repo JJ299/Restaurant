@@ -12,23 +12,23 @@
   --container-color: #ffffff;
 
   --body-font: "Poppins", sans-serif;
-  --biggest-font-size: 2.25 rem;
-  --h1-font-size: 1.5 rem;
-  --h2-font-size: 1.25 rem;
-  --h3-font-size: 1 rem;
-  --normal-font-size: 0.938 rem;
-  --small-font-size: 0.813 rem;
-  --smaller-font-size: 0.75 rem;
+  --biggest-font-size: 2.25rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
 
   --font-medium: 500;
   --font-semi-bold: 600;
 
-  --mb-1: 0.5 rem;
-  --mb-2: 1 rem;
-  --mb-3: 1.5 rem;
-  --mb-4: 2 rem;
-  --mb-5: 2.5 rem;
-  --mb-6: 3 rem;
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
 
   --z-tooltip: 10;
   --z-fixed: 100;
@@ -36,13 +36,13 @@
 
 @media screen and (min-width: 768px) {
   :root {
-    --biggest-font-size: 4 rem;
-    --h1-font-size: 2.25 rem;
-    --h2-font-size: 1.5 rem;
-    --h3-font-size: 1.25 rem;
-    --normal-font-size: 1 rem;
-    --small-font-size: 0.875 rem;
-    --smaller-font-size: 0.813 rem;
+    --biggest-font-size: 4rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
   }
 }
 
@@ -125,4 +125,58 @@ img {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: var(--z-fixed);
+  background-color: var(--body-color);
+}
+
+.nav {
+  max-width: 1024px;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .nav_menu {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 0 1rem;
+    text-align: center;
+    background-color: var(--body-color);
+    transition: 0.4s;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 1rem 1rem;
+    z-index: var(--z-fixed);
+  }
+}
+
+.nav_item {
+  margin-bottom: var(--mb-2);
+}
+
+.nav_link,
+.nav_logo,
+.nav_toggle {
+  color: var(--text-color);
+  font-weight: var(--font-medium);
+}
+
+.nav_logo:hover {
+  color: var(--first-color);
+}
+
+.nav_link {
+  transition: 0.3s;
+}
+
+.nav_link:hover {
+  color: var(--first-color);
+}
+
+.nav_toggle {
+  font-size: 1.3rem;
+  cursor: pointer;
 }
