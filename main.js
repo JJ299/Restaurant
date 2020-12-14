@@ -24,6 +24,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 const sections = document.querySelectorAll('section[id]')
 
+/* Shadow effect on navbar when moved */
 function scrollActive(){
     const scrollY = window.pageYOffset
 
@@ -42,6 +43,7 @@ function scrollActive(){
 
 window.addEventListener('scroll', scrollActive)
 
+/* Creates an arrow box that takes you back to the top when you go down 560 */
 function scrollHeader () {
     const nav = document.getElementById('header')
 
@@ -51,7 +53,7 @@ function scrollHeader () {
 window.addEventListener('scroll', scrollHeader)
 
 function scrollTop () {
-    const scroll = document.getElementById('scroll-top')
+    const scrollTop = document.getElementById('scroll-top')
 
     if (this.scrollY >= 560) scrollTop.classList.add('scroll-top'); else scrollTop.classList.remove('scroll-top')
 }
