@@ -196,7 +196,7 @@ img {
 .scrolltop {
   position: fixed;
   right: 1em;
-  bottom: 1rem;
+  bottom: -20%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -205,6 +205,7 @@ img {
   border-radius: 0.4rem;
   z-index: var(--z-tooltip);
   transition: 0.4s;
+  visibility: hidden;
 }
 
 .scrolltop:hover {
@@ -214,4 +215,9 @@ img {
 .scrolltop_icon {
   font-size: 1.8 rem;
   color: var(--body-color);
+}
+
+.scroll-top {
+  visibility: visible;
+  bottom: 1.5rem;
 }
