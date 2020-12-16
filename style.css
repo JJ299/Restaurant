@@ -345,3 +345,25 @@ img {
   padding: 0.625rem 0.813rem;
   border-radius: 0.5rem 0;
 }
+
+.app_data {
+  text-align: center;
+}
+
+.app_description {
+  margin-bottom: var(--mb-5);
+}
+
+.app_stores {
+  margin-bottom: var(--mb-4);
+}
+
+.app_store {
+  width: 120px;
+  margin: 0 var(--mb-1);
+}
+
+.app_img {
+  width: 200px;
+  justify-self: center;
+}
