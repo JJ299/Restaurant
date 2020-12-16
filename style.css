@@ -317,3 +317,31 @@ img {
   align-self: center;
   margin-bottom: var(--mb-2);
 }
+
+.menu_name,
+.menu_preci {
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+}
+
+.menu_name {
+  font-size: var(--normal-font-size);
+}
+
+.menu_detail,
+.menu_preci {
+  font-size: var(--small-font-size);
+}
+
+.menu_detail {
+  margin-bottom: var(--mb-1);
+}
+
+.menu_button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  padding: 0.625rem 0.813rem;
+  border-radius: 0.5rem 0;
+}
