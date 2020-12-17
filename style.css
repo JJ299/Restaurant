@@ -398,3 +398,26 @@ img {
   color: var(--title-color);
   margin-right: var(--mb-2);
 }
+
+.footer_title {
+  font-size: var(--h2-font-size);
+  color: var(--title-color);
+  margin-bottom: var(--mb-2);
+}
+
+.footer_link {
+  display: inline-block;
+  color: var(--text-color);
+  margin-bottom: var(--mb-1);
+}
+
+.footer_link:hover {
+  color: var(--first-color);
+}
+
+.footer_copy {
+  text-align: center;
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+  margin-top: 3.5rem;
+}
