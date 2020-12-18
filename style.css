@@ -421,3 +421,35 @@ img {
   color: var(--text-color-light);
   margin-top: 3.5rem;
 }
+
+@media screen and (min-width: 576px) {
+  .home_container,
+  .about_container,
+  .app_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about_data,
+  .about_initial,
+  .app_data,
+  .app_initial,
+  .contact_container,
+  .contact_initial {
+    text-align: initial;
+  }
+
+  .about_img,
+  .app_img {
+    width: 380px;
+    order: -1;
+  }
+
+  .contact_container {
+    grid-template-columns: 1.75fr 1fr;
+    align-items: center;
+  }
+
+  .contact_button {
+    justify-self: center;
+  }
+}
