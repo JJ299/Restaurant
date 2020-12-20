@@ -59,3 +59,12 @@ function scrollTop () {
 }
 
 window.addEventListener('scroll', scrollTop)
+
+const themeButton = document.getElementById('theme-button')
+const darktheme = 'dark-theme'
+const iconTheme = 'bx-sun'
+
+themeButton.addEventListener('click', () => {
+    document.body.classList.toggle(darktheme)
+    themeButton.classList.toggle(iconTheme)
+})
